@@ -1,6 +1,8 @@
 plugins {
     // разворачиваем Java-проект
     id("java")
+    // поддержка Kotlin
+    id("org.jetbrains.kotlin.jvm") version "1.9.22"
     // плагин IntelliJ Platform
     id("org.jetbrains.intellij") version "2.5.0"
 }
@@ -34,4 +36,8 @@ tasks {
         sourceCompatibility = "17"
         targetCompatibility = "17"
     }
+}
+
+dependencies {
+    implementation(kotlin("stdlib"))
 }
