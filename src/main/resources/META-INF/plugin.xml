@@ -24,6 +24,7 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <fileType name="October Page" implementationClass="com.example.october.OctoberPageFileType" extensions="htm" />
+        <multiHostInjector implementation="com.example.october.OctoberPagePhpInjector" />
     </extensions>
 </idea-plugin>
